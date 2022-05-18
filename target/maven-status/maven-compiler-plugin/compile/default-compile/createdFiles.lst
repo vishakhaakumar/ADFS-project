@@ -1,0 +1,8 @@
+com\microsoft\azure\msalobosample\OboAuthProvider.class
+com\microsoft\azure\msalobosample\CachingConfig.class
+com\microsoft\azure\msalobosample\MsalOboSampleApplication.class
+com\microsoft\azure\msalobosample\SecurityResourceServerConfig.class
+com\microsoft\azure\msalobosample\AADClaimsVerifier.class
+com\microsoft\azure\msalobosample\AuthException.class
+com\microsoft\azure\msalobosample\CachingConfig$1.class
+com\microsoft\azure\msalobosample\ApiController.class

@@ -41,13 +41,13 @@ public class SecurityResourceServerConfig extends ResourceServerConfigurerAdapte
     @Override
     public void configure(HttpSecurity http) throws Exception {
         log.info("---------------- Security configure called ----------------");
-        http
-                .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
-                .and()
-                .authorizeRequests()
-                .antMatchers("/*")
-                .access("#oauth2.hasScope('" + accessAsUserScope + "')"); // required scope to access /api URL
-    }
+            http
+                    .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
+                    .and()
+                    .authorizeRequests()
+                    .antMatchers("/test/*")
+                    .access("#oauth2.hasScope('" + accessAsUserScope + "')"); // required scope to access /api URL
+        }
 
     @Bean
     public TokenStore tokenStore() {

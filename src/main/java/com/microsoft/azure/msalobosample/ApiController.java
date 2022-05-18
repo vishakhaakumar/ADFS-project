@@ -28,7 +28,7 @@ public class ApiController {
         return "hello from here";
     }
 
-    @RequestMapping("/graphMeApi")
+    @RequestMapping("/test/graphMeApi")
     public ResponseEntity<String> graphMeApi() {
         log.info("---------------- graphMeApi called ----------------");
         try {
